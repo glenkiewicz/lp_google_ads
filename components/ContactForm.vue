@@ -7,13 +7,14 @@
         <el-form 
             name="form"
             method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
             :model="form" 
             :rules="rules" 
             ref="form"  
             @submit.native.prevent="onSubmit" 
             v-else 
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
+            
             >
             <el-form-item prop="name">
                 <el-input v-model="form.name" placeholder="Imię i Nazwisko"></el-input>
