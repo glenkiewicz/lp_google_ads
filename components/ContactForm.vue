@@ -24,7 +24,7 @@
                 <el-button native-type="submit">Wyslij</el-button>
             </el-form-item>
         </el-form>
-        <form name="lpform" netlify netlify-honeypot="bot-field" hidden>
+        <form name="lpform" method="post" netlify netlify-honeypot="bot-field" hidden>
   <input type="text" name="name" />
   <input type="text" name="email" />
   <input type="text" name="phone" />
@@ -103,7 +103,7 @@ export default {
                 header: { "Content-Type": "application/x-www-form-urlencoded" }
             };
             axios.post(
-                "https://festive-bartik-f195dc.netlify.com/",
+                "/",
                 this.encode({
                 "form-name": "lpform",
                 ...this.form
