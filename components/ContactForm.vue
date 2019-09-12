@@ -24,12 +24,6 @@
                 <el-button native-type="submit">Wyslij</el-button>
             </el-form-item>
         </el-form>
-        <form name="lpform" method="post" netlify netlify-honeypot="bot-field" hidden>
-  <input type="text" name="name" />
-  <input type="text" name="email" />
-  <input type="text" name="phone" />
-  <input type="checkbox" name="accept">
-</form>
     </section>
 </template>
 
