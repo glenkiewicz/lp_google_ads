@@ -26,9 +26,9 @@
         </el-form>
         <form name="lpform" netlify netlify-honeypot="bot-field" hidden>
   <input type="text" name="name" />
-  <input type="email" name="email" />
-  <input type="email" name="phone" />
-  <input type="checkboc" name="accept">
+  <input type="text" name="email" />
+  <input type="text" name="phone" />
+  <input type="checkbox" name="accept">
 </form>
     </section>
 </template>
