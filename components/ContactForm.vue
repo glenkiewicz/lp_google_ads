@@ -1,24 +1,34 @@
 <template>
     <section class="contact-form" v-loading="pending">
-        <form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
+        <el-form 
+            name="lpform"
+            data-netlify="true"
+            :model="form" 
+            :rules="rules" 
+            ref="form"  
+            @submit.native.prevent="onSubmit" 
+            >
+            <el-form-item prop="name">
+                <el-input v-model="form.name" placeholder="Imię i Nazwisko"></el-input>
+            </el-form-item>
+            <el-form-item prop="email">
+                <el-input v-model="form.email" placeholder="E-mail"></el-input>
+            </el-form-item>
+            <el-form-item prop="phone">
+                <el-input v-model="form.phone" placeholder="Telefon"></el-input>
+            </el-form-item>
+            <el-form-item prop="accept">
+                <el-checkbox v-model="form.accept">Wyraźam zgodę</el-checkbox>
+            </el-form-item>
+            <el-form-item>
+                <el-button native-type="submit">Wyslij</el-button>
+            </el-form-item>
+        </el-form>
+        <form name="lpform" netlify netlify-honeypot="bot-field" hidden>
+  <input type="text" name="name" />
+  <input type="email" name="email" />
+  <input type="email" name="phone" />
+  <input type="checkboc" name="accept">
 </form>
     </section>
 </template>
