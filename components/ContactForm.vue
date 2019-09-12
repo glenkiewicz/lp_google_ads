@@ -5,6 +5,7 @@
             <p>Nasi doradcy skontaktują się z Tobą w ciągu 48 godzin przedstawiając ofertę</p>
         </div>
         <el-form 
+        name="lpform"
             data-netlify="true"
             :model="form" 
             :rules="rules" 
@@ -105,6 +106,7 @@ export default {
             axios.post(
                 "/",
                 this.encode({
+                "form-name": "lpform",
                 ...this.form
                 }),
                 axiosConfig
