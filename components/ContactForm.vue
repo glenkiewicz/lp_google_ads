@@ -5,10 +5,7 @@
             <p>Nasi doradcy skontaktują się z Tobą w ciągu 48 godzin przedstawiając ofertę</p>
         </div>
         <el-form 
-            name="form"
-            method="post"
             data-netlify="true"
-            data-netlify-honeypot="bot-field"
             :model="form" 
             :rules="rules" 
             ref="form"  
@@ -36,6 +33,7 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
 
     data() {
@@ -77,7 +75,13 @@ export default {
         }
     },
     methods: {
-
+        encode (data) {
+            return Object.keys(data)
+                .map(
+                    key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+                )
+                .join("&");
+        },
         validateForm(ref = 'form', error) {
             return new Promise((resolve, reject) => {
                 this.$refs[ref].validate(valid => {
@@ -95,6 +99,16 @@ export default {
         },
 
         onSuccess() {
+            const axiosConfig = {
+                header: { "Content-Type": "application/x-www-form-urlencoded" }
+            };
+            axios.post(
+                "/",
+                this.encode({
+                ...this.form
+                }),
+                axiosConfig
+            );
             this.isSent = true;
         },
 
