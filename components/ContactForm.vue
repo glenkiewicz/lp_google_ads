@@ -4,7 +4,16 @@
             <h1>Formularz został wysłany</h1>
             <p>Nasi doradcy skontaktują się z Tobą w ciągu 48 godzin przedstawiając ofertę</p>
         </div>
-        <el-form :model="form" :rules="rules" ref="form"  @submit.native.prevent="onSubmit" v-else data-netlify="true">
+        <el-form 
+            name="form"
+            :model="form" 
+            :rules="rules" 
+            ref="form"  
+            @submit.native.prevent="onSubmit" 
+            v-else 
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            >
             <el-form-item prop="name">
                 <el-input v-model="form.name" placeholder="Imię i Nazwisko"></el-input>
             </el-form-item>
