@@ -6,6 +6,7 @@
         </div>
         <el-form 
             name="form"
+            method="post"
             :model="form" 
             :rules="rules" 
             ref="form"  
