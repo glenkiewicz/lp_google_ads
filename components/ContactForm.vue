@@ -1,12 +1,15 @@
 <template>
     <section class="contact-form" v-loading="pending">
+        <div class="form__sent" v-if="isSent">
+            <h1>Formularz został wysłany</h1>
+        </div>
         <el-form 
             name="lpform"
-            data-netlify="true"
             :model="form" 
             :rules="rules" 
             ref="form"  
             @submit.native.prevent="onSubmit" 
+            v-else
             >
             <el-form-item prop="name">
                 <el-input v-model="form.name" placeholder="Imię i Nazwisko"></el-input>
@@ -33,6 +36,7 @@ export default {
 
     data() {
         return {
+            isSent: false,
             pending: false,
             visible: false,
             form: {
@@ -104,6 +108,7 @@ export default {
                 }),
                 axiosConfig
             );
+            this.isSent = true;
         },
 
         onError(err) {
