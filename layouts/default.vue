@@ -12,8 +12,6 @@
 </template>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,900&display=swap');
 
 $base-blue: #00a0e3;
 $base-dark: #3c484c;
