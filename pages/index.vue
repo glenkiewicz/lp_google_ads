@@ -17,14 +17,17 @@
             <article class="opinions__item">
                 <p class="opinions__text">„Zwracając uwagę na efekty wdrażanej strategii oraz wyniki prowadzonych kampanii i realizowanych audytów, zdecydowaliśmy się na kontynuację działań promocyjnych powierzanych Up&More. Dostrzegamy potrzebę generowania jeszcze większego zainteresowania naszą ofertą, a poprzez rekomendowaną analizę i sprawdzoną współpracę wierzymy, że to będzie kolejny krok w sukcesywnym rozwoju naszej firmy.”</p>
                 <p class="opinions__info"><strong>Michał Pryshliak</strong>, Marketing Specialist z firmy <strong>AmeriGas</strong></p>
+                <img src="~/assets/amerigas.png">
             </article>
             <article class="opinions__item">
                 <p class="opinions__text">„Specyfika branży self storage wymaga od agencji reklamowych dużej elastyczności oraz nieszablonowego podejścia. Zespół Up&More pokazał, że potrafi w działaniach wyjść poza schematy, dlatego zdecydowaliśmy się na nawiązanie współpracy.”</p>
                 <p class="opinions__info"><strong>Przemek Główczewski</strong>, Dyrektor Zarządzający <strong>Kangu Self Storage </strong></p>
+                <img src="~/assets/kangu.png">
             </article>
             <article class="opinions__item">
                 <p class="opinions__text">„2019 rok będzie dla nas kluczowy w zakresie rozwoju firmy, zarówno w kontekście wynajmu aut, jak i car sharingu. Po zmianie dotychczasowego partnera w zakresie promocji w sieci, długo szukaliśmy podmiotu, któremu będziemy mogli powierzyć nasze działania. Agencja Up&More pokazała, że warto dać jej kredyt zaufania.”</p>
                 <p class="opinions__info"><strong>Katarzyna Panek</strong>, rzecznik prasowy <strong>Panek S.A.</strong></p>
+                <img src="~/assets/panek.png">
             </article>
         </section>
     </div>

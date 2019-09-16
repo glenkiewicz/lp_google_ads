@@ -2,6 +2,7 @@
   <div class="wrapper">
     <header class="header">
         <a href="/" class="header__logo" title="Audyt Google za 0 zł | Up&More"><img src="~/assets/logo.png"></a>
+        <img src="~/assets/logos.png">
     </header>
     <nuxt />
     <footer class="footer">
@@ -29,7 +30,10 @@ body {
     margin: 0 auto;
 }
 .header {
-    padding-bottom: 70px;
+    padding: 15px 0 70px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     &__logo {
         display: block;
         max-width: 200px;
@@ -56,6 +60,13 @@ body {
     .wrapper {
         width: 100%;
         padding: 0 20px;
+    }
+    .header {
+        flex-flow: column wrap;
+        align-items: center;
+        &__logo {
+            margin-bottom: 20px;
+        }
     }
 }
 </style>

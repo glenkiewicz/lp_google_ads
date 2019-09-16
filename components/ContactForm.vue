@@ -23,7 +23,8 @@
                 <el-input v-model="form.phone" placeholder="Telefon" class="phone"></el-input>
             </el-form-item>
             <el-form-item prop="accept">
-                <el-checkbox v-model="form.accept">Administratorem Państwa danych osobowych jest Up&More sp. z o.o.</el-checkbox>
+                <el-checkbox v-model="form.accept">
+Administratorem Pani/Pana danych osobowych jest Up&More Sp. z o.o. z siedzibą w Warszawie (02-628) ul. Krasickiego 11B, Warszawa. Pani/Pana dane osobowe będą przetwarzane w celu obsługi Pani/Pana zapytania. Więcej informacji na temat przetwarzania danych osobowych oraz przysługujących Pani/Panu praw z tym związanych znajduje się w naszej Polityce Prywatności dostępnej na stronie <a href="http://upmore.pl/docs/Polityka_Prywatnosci.pdf" target="_blank">wwww.upmore.pl</a></el-checkbox>
             </el-form-item>
             <el-form-item>
                 <el-button native-type="submit">Wyślij!</el-button>
@@ -225,6 +226,12 @@ $base-dark: #3c484c;
             &__label {
                 white-space: pre-line;
                 color: #fff;
+                font-size: 9px;
+                line-height: 120%;
+                a {
+                    color: #fff;
+                    font-weight: 700;
+                }
             }
         }
         .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
