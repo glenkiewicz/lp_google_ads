@@ -62,10 +62,11 @@ body {
         padding: 0 20px;
     }
     .header {
-        flex-flow: column wrap;
-        align-items: center;
         &__logo {
-            margin-bottom: 20px;
+            max-width: 100px;
+        }
+        > img {
+            max-width: 120px;
         }
     }
 }
