@@ -1,12 +1,12 @@
 <template>
   <div class="wrapper">
     <header class="header">
-        <a href="/" class="header__logo" title="Audyt Google za 0 zł | Up&More"><img src="~/assets/logo.png"></a>
+        <a href="http://upmore.pl" target="_blank" class="header__logo" title="Audyt Google za 0 zł | Up&More"><img src="~/assets/logo.png"></a>
         <img src="~/assets/logos.png">
     </header>
     <nuxt />
     <footer class="footer">
-        <a href="/" class="footer__logo" title="Audyt Google za 0 zł | Up&More"><img src="~/assets/logo.png"></a>
+        <a href="http://upmore.pl" target="_blank" class="footer__logo" title="Audyt Google za 0 zł | Up&More"><img src="~/assets/logo.png"></a>
         <p>Copyright 2019</p>
     </footer>
   </div>

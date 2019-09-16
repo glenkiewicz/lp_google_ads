@@ -64,7 +64,7 @@ export default {
   webfontloader: {
     google: {
       families: [
-          'Lato:300,400',
+          'Lato:300,400:latin-ext',
           'Maven Pro: 400,900',
         ] 
     }

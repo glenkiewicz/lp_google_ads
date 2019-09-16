@@ -60,8 +60,7 @@ export default {
                 ],
                 phone: [
                     { required: true, message: 'Tylko 9 cyfrowe numery telefonu',
-                        pattern: /^\d{9}$/,
-                        transform: (value) => (''+value).replace(/[ ]/g, '').trim()
+                        pattern: /^\d{9}$/
                     },
                 ],
                 email: [
@@ -69,7 +68,7 @@ export default {
                     { type: 'email',  message: 'Wprowadź poprawny email' }
                 ],
                 accept: [
-                    { required: true, message: 'Zgoda musi być zaznaczona'}
+                    { required: true, type: 'enum', enum: ['true'], message: 'Zgoda musi być zaznaczona', transform: v => String(v) }
                 ]
             }
         }
@@ -254,6 +253,13 @@ $base-dark: #3c484c;
 @media screen and (max-width: 1024px) {
     .contact-form {
         max-width: 600px;
+        margin: 20px auto;
+    }
+}
+@media screen and (max-width: 420px) {
+    .contact-form {
+        max-width: 320px;
+        min-width: 320px;
         margin: 20px auto;
     }
 }
