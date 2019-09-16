@@ -42,7 +42,7 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    'nuxt-webfontloader'
+    'nuxt-webfontloader',
     ['@nuxtjs/google-tag-manager', { id: 'GTM-XXXXXXX' }],
   ],
   /*
@@ -65,7 +65,7 @@ export default {
     google: {
       families: [
           'Lato:300,400',
-          'Maven Pro: 400,900'
+          'Maven Pro: 400,900',
         ] 
     }
   },
