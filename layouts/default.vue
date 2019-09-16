@@ -66,7 +66,8 @@ body {
             max-width: 100px;
         }
         > img {
-            max-width: 120px;
+            max-width: 100px;
+            display: block;
             height: auto;
         }
     }
