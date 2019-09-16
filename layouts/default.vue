@@ -67,6 +67,7 @@ body {
         }
         > img {
             max-width: 120px;
+            height: auto;
         }
     }
 }
