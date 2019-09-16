@@ -43,6 +43,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     'nuxt-webfontloader'
+    ['@nuxtjs/google-tag-manager', { id: 'GTM-XXXXXXX' }],
   ],
   /*
   ** Axios module configuration
