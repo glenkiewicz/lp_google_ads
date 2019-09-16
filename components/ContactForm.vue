@@ -1,7 +1,7 @@
 <template>
     <section class="contact-form" v-loading="pending">
-        <div class="form__sent" v-if="isSent">
-            <h1>Formularz został wysłany</h1>
+        <div class="contact-form__sent" v-if="isSent">
+            <h4>Formularz został wysłany</h4>
         </div>
         <el-form 
             name="lpform"
@@ -136,6 +136,17 @@ $base-dark: #3c484c;
     border-radius: 10px;
     max-width: 400px;
     min-width: 400px;
+    &__sent {
+        h4 {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 900;
+            text-align: center;
+            font-family: 'Maven Pro', sans-serif;
+            font-size: 3vh;
+            margin: 0;
+        }
+    }
     h3 {
         color: #fff;
         text-transform: uppercase;

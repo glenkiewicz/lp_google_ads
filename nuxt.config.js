@@ -9,7 +9,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Zwiększymy liczbę Twoich Klientów bez podnoszenia bużetu' }
+      { hid: 'description', name: 'description', content: 'Zwiększymy liczbę Twoich Klientów bez podnoszenia budżetu' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
