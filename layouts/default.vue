@@ -2,7 +2,7 @@
   <div class="wrapper">
     <header class="header">
         <a href="http://upmore.pl" target="_blank" class="header__logo" title="Audyt Google za 0 zł | Up&More"><img src="~/assets/logo.png"></a>
-        <img src="~/assets/logos.png">
+        <aside><img src="~/assets/logos.png"></aside>
     </header>
     <nuxt />
     <footer class="footer">
@@ -65,10 +65,11 @@ body {
         &__logo {
             max-width: 100px;
         }
-        > img {
-            max-width: 100px;
-            display: block;
-            height: auto;
+        aside {
+            max-width: 120px;
+            img {
+                width: 100%;
+            }
         }
     }
 }
