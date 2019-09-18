@@ -60,13 +60,5 @@ export default {
     */
     extend (config, ctx) {
     }
-  },
-  webfontloader: {
-    google: {
-      families: [
-          'Lato:300,400:latin-ext',
-          'Maven Pro: 400,900',
-        ] 
-    }
-  },
+  }
 }

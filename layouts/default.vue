@@ -17,6 +17,50 @@
 $base-blue: #00a0e3;
 $base-dark: #3c484c;
 
+/* lato-regular - latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/lato-v16-latin-ext-regular.eot'); /* IE9 Compat Modes */
+  src: local('Lato Regular'), local('Lato-Regular'),
+       url('/fonts/lato-v16-latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/lato-v16-latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/lato-v16-latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/lato-v16-latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/lato-v16-latin-ext-regular.svg#Lato') format('svg'); /* Legacy iOS */
+}
+/* lato-300 - latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/fonts/lato-v16-latin-ext-300.eot'); /* IE9 Compat Modes */
+  src: local('Lato Light'), local('Lato-Light'),
+       url('/fonts/lato-v16-latin-ext-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/lato-v16-latin-ext-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/lato-v16-latin-ext-300.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/lato-v16-latin-ext-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/lato-v16-latin-ext-300.svg#Lato') format('svg'); /* Legacy iOS */
+}
+
+/* maven-pro-900 - latin-ext */
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('/fonts/maven-pro-v13-latin-ext-900.eot'); /* IE9 Compat Modes */
+  src: local('Maven Pro Black'), local('MavenPro-Black'),
+       url('/fonts/maven-pro-v13-latin-ext-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/maven-pro-v13-latin-ext-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/maven-pro-v13-latin-ext-900.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/maven-pro-v13-latin-ext-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/maven-pro-v13-latin-ext-900.svg#MavenPro') format('svg'); /* Legacy iOS */
+}
+
 * {
     box-sizing: border-box;
 }
