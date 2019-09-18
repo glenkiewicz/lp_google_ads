@@ -5,9 +5,9 @@
                 <h1 class="content__title">Audyt<br> Google Ads<br> za <span>0 zł</span></h1>
                 <h2 class="content__subtitle">Zwiększymy liczbę Twoich<br>Klientów bez podnoszenia budżetu</h2>
                 <ul>
-                    <li>Sprawdzimy najważniejsze elmenty<br> prowadzonych kampanii</li>
-                    <li>Zaproponujemuy gotowe rozwiązania,<br> które zwiększą efektywność kampanii</li>
-                    <li>Skonsultujemy z Tobą rekomendacje<br> i wyznaczymy cele do realizacji</li>
+                    <li>Sprawdzimy najważniejsze elementy<br>prowadzonych kampanii</li>
+                    <li>Zaproponujemy gotowe rozwiązania,<br>które zwiększą efektywność kampanii</li>
+                    <li>Skonsultujemy z Tobą rekomendacje<br>i wyznaczymy cele do realizacji</li>
                 </ul>
             </section>
             <contact-form></contact-form>
@@ -26,7 +26,7 @@
             </article>
             <article class="opinions__item">
                 <p class="opinions__text">„2019 rok będzie dla nas kluczowy w zakresie rozwoju firmy, zarówno w kontekście wynajmu aut, jak i car sharingu. Po zmianie dotychczasowego partnera w zakresie promocji w sieci, długo szukaliśmy podmiotu, któremu będziemy mogli powierzyć nasze działania. Agencja Up&More pokazała, że warto dać jej kredyt zaufania.”</p>
-                <p class="opinions__info"><strong>Katarzyna Panek</strong>, rzecznik prasowy <strong>Panek S.A.</strong></p>
+                <p class="opinions__info"><strong>Katarzyna Panek</strong>, Dyrektor Marketingu <strong>Panek S.A.</strong></p>
                 <img src="~/assets/panek.png">
             </article>
         </section>
@@ -110,6 +110,13 @@ $base-dark: #3c484c;
         }
         &__item {
             width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .content {
+        &__text {
+            background: none;
         }
     }
 }

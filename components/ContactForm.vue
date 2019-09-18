@@ -258,9 +258,11 @@ $base-dark: #3c484c;
 }
 @media screen and (max-width: 420px) {
     .contact-form {
-        max-width: 320px;
-        min-width: 320px;
+        width: 100%;
+        max-width: inherit;
+        min-width: inherit;
         margin: 20px auto;
+        padding: 15px;
     }
 }
 </style>

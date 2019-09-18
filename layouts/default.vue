@@ -73,4 +73,9 @@ body {
         }
     }
 }
+@media screen and (max-width: 480px) {
+    .wrapper {
+        padding: 0 10px;
+    }
+}
 </style>
