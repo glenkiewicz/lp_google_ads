@@ -109,7 +109,12 @@ export default {
                 ...this.form
                 }),
                 axiosConfig
-            );
+            ).then(() => {
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                'event': 'formSubmitted',
+                });
+            });
             this.isSent = true;
         },
 
