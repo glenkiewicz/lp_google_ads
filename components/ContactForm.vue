@@ -71,7 +71,6 @@ export default {
                 ],
                 www: [
                     { required:true, message: 'Podaj adres www do audytu' },
-                    {  type: 'url' }
                 ],
                 email: [
                     { required: true, message: 'Wprowadź email' },
