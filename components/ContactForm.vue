@@ -25,13 +25,11 @@
              <el-form-item prop="www">
                 <el-input v-model="form.www" placeholder="Adres WWW" class="www"></el-input>
             </el-form-item>
-            <el-form-item prop="query">
-                <el-input v-model="form.query" type="hidden"></el-input>
-            </el-form-item>
             <el-form-item prop="accept">
                 <el-checkbox v-model="form.accept">
 Administratorem Pani/Pana danych osobowych jest Up&More Sp. z o.o. z siedzibą w Warszawie (02-628) ul. Krasickiego 11B, Warszawa. Pani/Pana dane osobowe będą przetwarzane w celu obsługi Pani/Pana zapytania. Więcej informacji na temat przetwarzania danych osobowych oraz przysługujących Pani/Panu praw z tym związanych znajduje się w naszej Polityce Prywatności dostępnej na stronie <a href="http://upmore.pl/docs/Polityka_Prywatnosci.pdf" target="_blank">wwww.upmore.pl</a></el-checkbox>
             </el-form-item>
+            <el-input v-model="form.query" type="hidden"></el-input>
             <el-form-item>
                 <el-button native-type="submit">Wyślij!</el-button>
             </el-form-item>
@@ -218,6 +216,13 @@ $base-dark: #3c484c;
             &.phone {
                 .el-input__inner {
                     background: url('~assets/phone.png') 20px center no-repeat;
+                    background-color: #fff;
+                    padding-left: 50px
+                }
+            }
+            &.www {
+                .el-input__inner {
+                    background: url('~assets/www.png') 20px center no-repeat;
                     background-color: #fff;
                     padding-left: 50px
                 }
