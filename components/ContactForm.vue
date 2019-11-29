@@ -29,7 +29,7 @@
                 <el-checkbox v-model="form.accept">
 Administratorem Pani/Pana danych osobowych jest Up&More Sp. z o.o. z siedzibą w Warszawie (02-628) ul. Krasickiego 11B, Warszawa. Pani/Pana dane osobowe będą przetwarzane w celu obsługi Pani/Pana zapytania. Więcej informacji na temat przetwarzania danych osobowych oraz przysługujących Pani/Panu praw z tym związanych znajduje się w naszej Polityce Prywatności dostępnej na stronie <a href="http://upmore.pl/docs/Polityka_Prywatnosci.pdf" target="_blank">wwww.upmore.pl</a></el-checkbox>
             </el-form-item>
-            <el-input v-model="form.query" type="hidden"></el-input>
+            <!-- <el-input v-model="form.query" type="hidden"></el-input> -->
             <el-form-item>
                 <el-button native-type="submit">Wyślij!</el-button>
             </el-form-item>
@@ -51,7 +51,7 @@ export default {
                 phone: '',
                 www: '',
                 accept: null,
-                query: location.search
+                //query: location.search
             }
         }
     },
